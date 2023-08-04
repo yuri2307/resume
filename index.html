@@ -6,37 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Резюме">
     <meta name="description" content="В этом сайте вы можете найти мое резюме">
+    <link rel="stylesheet" href="styles.css">
     <title>Resume</title>
+    
 </head>
 <body>
-    <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1613172254_87-p-zheltii-fon-gubka-bob-103.jpg" alt="Аватарка" width="150">
-    <h1>СПАНЧ БОБ</h1>
+
+    <div class="container">
+<div class="info">
+    <img src="https://infografics.ru/wp-content/uploads/2019/03/kanada.jpg" alt="Аватарка" class="avatar" width="100">
+    <div class="info-text">
+    <h1>Name</h1>
     <p>Я учусь в <strong>10 классе</strong></p>
     <p>Я занимаюсь <em>футболом</em></p>
     <hr>
-    <p><strong>Список сайтов</strong></p>
+    <h4>Список сайтов</h4>
     <a href="https://google.com" target="_blank">Google</a>
     <br>
     <a href="https://youtube.com" target="_blank">YouTube</a>
     <br>
     <a href="https://yandex.com" target="_blank">Yandex</a>
+</div>
+</div>
+<div class="card bg-red">
     <hr>
     <h2>Мои хобби</h2>
-    <ol>
+    <ol class="list">
     <li>Футбол</li>
     <li>Бег</li>
     <li>Программирование</li>
-    <li>Путешествие</li>
+    
     </ol>
+</div>
+<div class="card bg-yellow">
     <h2>Опыт работы</h2>
-    <table>
-        <thead>
+    <table class="table">
+        <!-- <thead>
         <tr>
             <th>Название</th>
             <th>Должность</th>
             <th>Год</th>
         </tr>
-        </thead>
+        </thead> -->
         <tbody>
             <tr>
                 <td>Школа</td>
@@ -48,29 +59,39 @@
                 <td>Нападающий</td>
                 <td>2023-сейчас</td>
             </tr>
+        
         </tbody>
     </table>
+</div>
     
-    <h1>Связаться со мной</h1>
-    <form >
-    <div>
-        <label for="text">Ваше имя:</label>
-        <input type="text" id="text" placeholder="Введите имя">
-    <div>
+    <form action="/" class="form">
+        <h2>Связаться со мной</h2>
 
-        <div>
+        <div class="form-row">
+
+        
+
+    <div class="form-group">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name"
+         placeholder="Введите имя">
+    </div>
+
+        <div class="form-group">
             <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        <div>
+            <input type="email" id="email"
+             placeholder="Введите email">
+        </div>
+    </div>
+        
 
-            <div>
+            <div class="form-group">
                 <label for="message">Ваше сообщение:</label>
-                <br>
+              
                 <textarea  id="message" cols="30" rows="5"></textarea>
-            <div>
+            </div>
 
-                <input type="submit" value="Отправить!">
-
+                <input class="btn" type="submit" value="Отправить!">
 
     
 
@@ -82,5 +103,6 @@
 
 
     </form>
+</div>
 </body>
 </html>
